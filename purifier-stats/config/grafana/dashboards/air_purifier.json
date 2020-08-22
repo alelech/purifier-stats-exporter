@@ -802,6 +802,68 @@
       "timeShift": null,
       "title": "Air quality",
       "type": "gauge"
+    },
+    {
+      "datasource": null,
+      "fieldConfig": {
+        "defaults": {
+          "custom": {},
+          "mappings": [],
+          "max": 100,
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red",
+                "value": null
+              },
+              {
+                "color": "green",
+                "value": 40
+              },
+              {
+                "color": "blue",
+                "value": 60
+              }
+            ]
+          },
+          "unit": "humidity"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 8,
+        "y": 20
+      },
+      "id": 24,
+      "options": {
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true
+      },
+      "pluginVersion": "7.1.0",
+      "targets": [
+        {
+          "expr": "purifier_air_humidity_ratio",
+          "instant": false,
+          "interval": "",
+          "legendFormat": "{{purifier_air_humidity_ratio}}",
+          "refId": "A"
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "Humidity",
+      "type": "gauge"
     }
   ],
   "refresh": "10s",
@@ -831,5 +893,5 @@
   "timezone": "",
   "title": "Air purifier",
   "uid": "BH4r3tNGz",
-  "version": 8
+  "version": 2
 }
