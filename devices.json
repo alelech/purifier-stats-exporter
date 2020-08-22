@@ -1,0 +1,120 @@
+{
+  "code": 0,
+  "message": "ok",
+  "result": {
+    "list": [
+      {
+        "did": "131412200",
+        "token": "b838a5c768bc2f64a08e4c951bdeef4e",
+        "longitude": "0.00000000",
+        "latitude": "0.00000000",
+        "name": "Air purifier",
+        "pid": "0",
+        "localip": "192.168.0.24",
+        "mac": "04:CF:8C:88:A0:16",
+        "ssid": "UPC2808420",
+        "bssid": "64:7C:34:0C:9F:85",
+        "parent_id": "",
+        "parent_model": "",
+        "show_mode": 1,
+        "model": "zhimi.airpurifier.mc1",
+        "adminFlag": 1,
+        "shareFlag": 0,
+        "permitLevel": 16,
+        "isOnline": true,
+        "desc": "Auto| PM2.5:5",
+        "extra": {
+          "isSetPincode": 0,
+          "fw_version": "1.4.3_21106",
+          "needVerifyCode": 0,
+          "isPasswordEncrypt": 0
+        },
+        "prop": {
+          "aqi": "5",
+          "mode": "auto",
+          "power": "on"
+        },
+        "uid": 6258454925,
+        "pd_id": 639,
+        "password": "",
+        "p2p_id": "",
+        "rssi": -41,
+        "family_id": 0,
+        "reset_flag": 0
+      },
+      {
+        "did": "118056272",
+        "token": "644766616868457941423553624c336b",
+        "longitude": "0.00000000",
+        "latitude": "0.00000000",
+        "name": "Robot vacuum",
+        "pid": "0",
+        "localip": "192.168.0.27",
+        "mac": "40:31:3C:AC:0D:D5",
+        "ssid": "UPC2808420",
+        "bssid": "64:7C:34:0C:9F:85",
+        "parent_id": "",
+        "parent_model": "",
+        "show_mode": 1,
+        "model": "roborock.vacuum.s5",
+        "adminFlag": 1,
+        "shareFlag": 0,
+        "permitLevel": 16,
+        "isOnline": true,
+        "desc": "Fully charged",
+        "extra": {
+          "isSetPincode": 0,
+          "fw_version": "3.5.7_002008",
+          "needVerifyCode": 0,
+          "isPasswordEncrypt": 0
+        },
+        "event": {
+          "consumable_item_prop_cache": "{\"filter_element_work_time\":\"0\",\"filter_work_time\":\"144424\",\"main_brush_work_time\":\"144424\",\"sensor_dirty_time\":\"3123\",\"side_brush_work_time\":\"144424\"}",
+          "event.back_to_dock": "{\"timestamp\":1594810855,\"value\":[0]}",
+          "event.clean_complete": "{\"timestamp\":1594552710,\"value\":[0]}",
+          "event.error_code": "{\"timestamp\":1594810855,\"value\":[0]}",
+          "event.robot_timed_ended": "{\"timestamp\":1594725729,\"value\":[1594725720,0]}",
+          "event.robot_timed_started": "{\"timestamp\":1594810801,\"value\":[1594810800,0]}",
+          "event.segment_clean_succ": "{\"timestamp\":1594231968,\"value\":[0]}",
+          "event.segment_map_done": "{\"timestamp\":1594725785,\"value\":[0]}",
+          "event.status": "{\"timestamp\":1594810875,\"value\":[{\"battery\":100,\"clean_area\":612500,\"clean_time\":26,\"dnd_enabled\":0,\"error_code\":0,\"fan_power\":104,\"in_cleaning\":0,\"in_fresh_state\":1,\"in_returning\":0,\"lab_status\":1,\"lock_status\":0,\"map_present\":1,\"map_status\":3,\"msg_seq\":27,\"msg_ver\":3,\"state\":8,\"water_box_status\":0}]}",
+          "miot_bind_time": "1594148405",
+          "prop.battery": "100",
+          "prop.fan_power": "104",
+          "prop.filter_life": "74",
+          "prop.main_brush_life": "87",
+          "prop.ota_state": "idle",
+          "prop.ota_state_ts": "1594776247",
+          "prop.s_mixxx": "{\"StorageKeys_UserSelectedCountryServerCode_118056272_0_MI_3\":\"de\",\"StorageKeys_UserSelectedCountryServerCode_118056272_6258454925_MI_3\":\"de\"}",
+          "prop.scene_check_pre_battery": "100",
+          "prop.side_brush_life": "80",
+          "prop.state": "8"
+        },
+        "uid": 6258454925,
+        "pd_id": 577,
+        "password": "",
+        "p2p_id": "",
+        "rssi": -39,
+        "family_id": 0,
+        "reset_flag": 0
+      }
+    ],
+    "virtualModels": [
+      {
+        "model": "zhimi.airpurifier.m1",
+        "state": 0,
+        "url": ""
+      },
+      {
+        "model": "yunmi.waterpurifier.v2",
+        "state": 0,
+        "url": ""
+      },
+      {
+        "model": "zimi.powerstrip.v2",
+        "state": 0,
+        "url": ""
+      }
+    ]
+  }
+}

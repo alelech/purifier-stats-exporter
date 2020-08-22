@@ -1,0 +1,25 @@
+version: "3.8"
+services:
+  stats:
+    image: alelech/stats:0.0.1
+    expose:
+      - "8080"
+    env_file:
+      - env_config
+    restart: unless-stopped
+  prometheus:
+    image: prom/prometheus
+    expose:
+      - "9090"
+    volumes:
+      - ./config/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    restart: unless-stopped
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    volumes:
+    - ./config/grafana/datasources.yml:/etc/grafana/provisioning/datasources/datasources.yml
+    - ./config/grafana/dashboards.yml:/etc/grafana/provisioning/dashboards/dashboards.yml
+    - ./config/grafana/dashboards:/var/lib/grafana/dashboards
+    restart: unless-stopped
