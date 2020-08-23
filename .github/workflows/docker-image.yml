@@ -22,4 +22,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: alelech/purifier-stats-exporter
           tag_with_ref: true
-          path: stats-exporter
+          path: src
