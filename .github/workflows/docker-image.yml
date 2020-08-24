@@ -16,6 +16,6 @@ jobs:
       - uses: actions/checkout@v2
         
       - name: print_ref
-        run: echo ${{github}}
+        run: echo ${{github.ref}}
 
       
