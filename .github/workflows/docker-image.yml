@@ -17,7 +17,7 @@ jobs:
         
       - name: set master tag
         if: startsWith(${{github.ref}}, "refs/heads/master")
-        run: ::set-env name={DOCKER_TAG}::{"latest"}
+        run: echo "::set-env name={DOCKER_TAG}::{latest}"
         
       - name: print docker tag
         run: echo "$DOCKER_TAG"
