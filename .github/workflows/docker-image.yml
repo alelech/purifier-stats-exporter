@@ -15,7 +15,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         
-      - name: print_ref
-        run: echo ${{github.ref}}
+      - name: set master tag
+        if: startsWith(github.ref, "refs/heads/master")
+        run: ::set-env name={DOCKER_TAG}::{"latest"}
+        
+      - name: print docker tag
+        run: echo "$DOCKER_TAG"
 
       
