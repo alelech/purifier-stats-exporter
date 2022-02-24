@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Docker Image Release CI
 
 on:
   release:
@@ -30,4 +30,4 @@ jobs:
       with:
         context: src
         push: true
-        tags: alelech/purifier-stats-exporter:$DOCKER_TAG
+        tags: alelech/purifier-stats-exporter:${{ env.DOCKER_TAG }}
