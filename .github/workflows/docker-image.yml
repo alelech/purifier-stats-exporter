@@ -17,13 +17,11 @@ jobs:
     - uses: actions/checkout@v2    
     
     - name: set master tag
-      if: ${{startsWith(github.ref, "refs/heads/master")}}
+      if: ${{startsWith(github.ref, 'refs/heads/master')}}
       run: echo "DOCKER_TAG=latest" >> $GITHUB_ENV
 
     - name: set release tag
-      if: ${{startsWith(github.ref, "refs/tags") }}
-      env:
-        GITHUB_REF: ${{github.ref}}   
+      if: ${{startsWith(github.ref, 'refs/tags') }}
       run: echo "DOCKER_TAG=${GITHUB_REF##*/}" >> $GITHUB_ENV
 
     - name: print docker tag
